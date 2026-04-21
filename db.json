@@ -1,0 +1,23 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "moshe@example.com",
+      "password": "123",
+      "name": "Moshe"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "הפוסט הראשון שלי ב-NGXS",
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "title": "למה אנגולר 18 זה אש",
+      "userId": 1
+    }
+  ],
+  "comments": []
+}
