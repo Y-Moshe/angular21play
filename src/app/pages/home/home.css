@@ -5,7 +5,7 @@
 }
 
 .hero-section {
-  @apply bg-gradient-to-br from-blue-50 via-white to-purple-50 py-20 md:py-32;
+  @apply bg-linear-to-br from-blue-50 via-white to-purple-50 py-20 md:py-32;
 }
 
 .hero-content {
