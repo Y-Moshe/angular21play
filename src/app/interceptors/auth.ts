@@ -1,6 +1,6 @@
+import { TOKEN_STORAGE_KEY } from '@/config';
+import { loadFromStorage } from '@/utils';
 import { HttpInterceptorFn } from '@angular/common/http';
-import { TOKEN_STORAGE_KEY } from '../config';
-import { loadFromStorage } from '../utils';
 
 export const authInterceptor: HttpInterceptorFn = (req, next) => {
   const token = loadFromStorage(TOKEN_STORAGE_KEY);
