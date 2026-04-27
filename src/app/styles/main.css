@@ -1,0 +1,24 @@
+.main-layout {
+  @apply grid grid-cols-[1rem_1fr_1rem] px-4;
+  @apply md:grid-cols-[1fr_minmax(0,768px)_1fr] md:px-6;
+  @apply lg:grid-cols-[1fr_minmax(0,1024px)_1fr] lg:px-8;
+  @apply xl:grid-cols-[1fr_minmax(0,1280px)_1fr];
+  @apply 2xl:grid-cols-[1fr_minmax(0,1536px)_1fr];
+}
+
+.main-layout > * {
+  @apply col-start-2;
+}
+
+.main-layout > *.full,
+.main-layout .full {
+  @apply col-span-full;
+}
+
+.full {
+  @apply col-span-full;
+}
+
+.main-view {
+  /* Add Tailwind classes here if needed */
+}
