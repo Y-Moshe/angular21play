@@ -1,1 +1,33 @@
-<p>header works!</p>
+<header class="header-nav">
+  <div class="header-content">
+    <a href="/" class="logo">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+      </svg>
+      <span class="text-xl font-bold">Blogger</span>
+    </a>
+    
+    <nav class="hidden md:flex items-center gap-6">
+      <a href="/home" class="nav-link">Home</a>
+      <a href="/posts" class="nav-link">My Posts</a>
+      <a href="/new-post" class="nav-link">New Post</a>
+    </nav>
+    
+    <div class="flex items-center gap-3">
+      <!-- If not authenticated -->
+      <a href="/login" class="btn-secondary">Login</a>
+      <a href="/signup" class="btn-primary">Sign Up</a>
+      
+      <!-- If authenticated (hide above, show below) -->
+      <!-- <button class="btn-secondary">Profile</button>
+      <button class="btn-outline">Logout</button> -->
+    </div>
+    
+    <!-- Mobile menu button -->
+    <button class="md:hidden p-2 hover:bg-gray-100 rounded-lg">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+</header>

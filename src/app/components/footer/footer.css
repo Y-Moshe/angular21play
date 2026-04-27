@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+.footer-main {
+  @apply bg-gray-50 border-t border-gray-200 p-4 py-12;
+}
+
+.footer-content {
+  @apply grid grid-cols-1 md:grid-cols-4 gap-8 mb-8;
+}
+
+.footer-brand {
+  @apply md:col-span-1;
+}
+
+.footer-links {
+  @apply md:col-span-3 grid grid-cols-1 sm:grid-cols-3 gap-8;
+}
+
+.footer-link {
+  @apply text-gray-600 hover:text-gray-900 text-sm transition-colors;
+}
+
+.footer-bottom {
+  @apply pt-8 border-t border-gray-200 flex flex-col sm:flex-row justify-between items-center gap-4;
+}
+
+.footer-social {
+  @apply text-gray-400 hover:text-gray-600 transition-colors;
+}
